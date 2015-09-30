@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass'
 gem 'bootstrap-form'
+gem 'devise'
 gem 'hirb'
 gem 'kaminari'
 gem 'redcarpet'
