@@ -17,5 +17,9 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
+  include TestPasswordHelper
+
   # Add more helper methods to be used by all tests here...
 end
+ActiveRecord::FixtureSet.context_class.send
+:include, TestPasswordHelper
