@@ -12,7 +12,7 @@ Capybara.javascript_driver = :poltergeist
 
 require 'support/test_password_helper'
 
-class ActionDispatch;;IntegrationTest
+class ActionDispatch::IntegrationTest
 	include Capybara::DSL
 end
 
@@ -23,6 +23,9 @@ class ActiveSupport::TestCase
   include TestPasswordHelper
 
   # Add more helper methods to be used by all tests here...
+class ActionController::TestCase
+	include Devise::TestHelpers
 end
+
 ActiveRecord::FixtureSet.context_class.send
 :include, TestPasswordHelper
