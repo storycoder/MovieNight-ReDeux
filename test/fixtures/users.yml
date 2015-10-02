@@ -4,12 +4,7 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-joe:
+user:
   email: joe@joe.com
-  password_digest: <%= default_password_digest %>
-  admin: true
-#
-tim: 
-  email: time@tim.com
-  password_digest: <%= default_password_digest %>
-  admin: true
+  encrypted_password: <%= default_password_digest %>
+  
