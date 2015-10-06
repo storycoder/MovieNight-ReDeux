@@ -10,7 +10,7 @@ class UserLoginTest < ActionDispatch::IntegrationTest
 
   test 'valid users can sign in' do 
   	fill_in 'Email'
-  	with: @user.Email
+  	with: @user.email
   	fill_in 'Password'
   	with: default_password
   	click_button 'Log In'
